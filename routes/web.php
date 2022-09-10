@@ -14,8 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('pages.index');
+})->name('home');
+Route::get('annonce', function () {
+    return view('pages.annonce');
+})->name('annonce');
+Route::get('annonceur', function () {
+    return view('pages.annonceur');
+})->name('annonceur');
+Route::get('regisseur', function () {
+    return view('pages.regisseur');
+})->name('regisseur');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
