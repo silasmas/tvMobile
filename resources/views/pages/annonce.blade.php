@@ -1,5 +1,5 @@
 @extends('templates.layout')
-@section('titleanonnce', 'Annonce')
+@section('title', 'Annonce')
 @section('autreStyle')
 
 @endsection

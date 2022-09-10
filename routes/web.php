@@ -25,6 +25,15 @@ Route::get('annonceur', function () {
 Route::get('regisseur', function () {
     return view('pages.regisseur');
 })->name('regisseur');
+Route::get('logine', function () {
+    return view('pages.login');
+})->name('logine');
+Route::get('inscription', function () {
+    return view('pages.register');
+})->name('inscription');
+Route::get('pwdperdu', function () {
+    return view('pages.pwdperdu');
+})->name('pwdperdu');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
